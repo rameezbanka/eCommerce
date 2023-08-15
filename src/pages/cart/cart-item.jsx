@@ -1,0 +1,30 @@
+
+import React, { useContext } from "react";
+import { ShopContext } from "../../context/shop-context";
+
+export const CartItem=(props)=>{
+
+    const { cartItems,addToCart, removeFromCart,updateCartItemCount} = useContext(ShopContext);
+    const{id,title, price, image} = props.data;
+    const handleDecrease = () => {
+        if (cartItems[id] > 0) {
+          updateCartItemCount(cartItems[id] - 1, id);
+        }
+      };
+    return (
+        <div className="cartItem">
+            <img src={image} />
+            <div className="description">
+                <p>
+                    <b>{title}</b>
+                </p>
+                <p>Rs {price}</p>
+                <div className="countHandler">
+                    <button onClick={handleDecrease}> - </button>
+                    <input value={cartItems[id]} onChange={(e)=>updateCartItemCount(Number(e.target.value),id)}/>
+                    <button onClick={()=>addToCart(id)}> + </button>
+                </div>
+            </div>
+        </div>
+    );
+};
