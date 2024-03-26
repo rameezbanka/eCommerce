@@ -1,75 +1,48 @@
-.unique-register-container {
-    max-width: 400px;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .unique-input-container {
-    margin-bottom: 20px;
-  }
-  
-  .unique-tab-content {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    background-color: rgb(9, 148, 39);
-  }
-  
-  .unique-input {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .unique-label {
-    align-self: flex-start;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 3px;
-  }
-  
-  input {
-    width: 300px;
-    font-size: 13px;
-    padding: 3px;
-    border: none;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
-    outline: none;
-    display: flex;
-  }
+.unique-tab-content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  
-  .unique-register-button {
-    width: 150px;
-    padding: 10px;
-    background-color: darkblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .unique-register-button:hover {
-    background-color: blue;
-  }
-  
-  .unique-floating-error-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 150px;
-    background-color: rgb(85, 84, 84); /* Use rgba() with an alpha value */
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 400px;
-    margin-left: 120px;
-  }
-  
-  
+.unique-input-container {
+  margin-bottom: 15px;
+}
+
+.unique-input {
+  padding: 10px;
+}
+
+.unique-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.unique-input input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.unique-login-button-container {
+  text-align: center;
+}
+
+.unique-register-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.unique-register-button:hover {
+  background-color: #0056b3;
+}
